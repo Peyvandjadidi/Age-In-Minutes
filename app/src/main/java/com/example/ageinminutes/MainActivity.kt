@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 val ageInMinutes = currentDateInMinutes - selectedDateInMinutes
                 binding.ageInMinutes.setText(ageInMinutes.toString())
 
-            }, year, month, dayOfMonth
+            }, dayOfMonth, month, year
         )
         dpd.datePicker.setMaxDate(Date().time - 86400000 )
         //86400000 is the millieseconds of a day
